@@ -25,7 +25,7 @@ services:
       
     environment:
       AIRFLOW_CORE_EXECUTOR: SequentialExecutor
-      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: "mysql+pymysql://root:Pramuka123%40@mysql:3306/django-app-database"
+      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: "mysql+pymysql://root:Pramuka2345%40@mysql:3306/django-app-database"
       AIRFLOW_CORE_LOAD_EXAMPLES: "False"
       _AIRFLOW_WWW_USER_USERNAME: admin
       _AIRFLOW_WWW_USER_PASSWORD: admin
