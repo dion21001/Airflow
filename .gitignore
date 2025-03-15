@@ -1,0 +1,5 @@
+# Abaikan data volume MySQL
+mysql/
+
+# Abaikan log scheduler
+logs/
