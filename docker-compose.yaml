@@ -4,8 +4,8 @@ services:
     container_name: airflow_databases
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Pramuka123@
-      MYSQL_DATABASE: django-app-airflow_database
+      MYSQL_ROOT_PASSWORD: -
+      MYSQL_DATABASE: -
     ports:
       - "3012:3012"
     volumes:
@@ -25,7 +25,7 @@ services:
       
     environment:
       AIRFLOW_CORE_EXECUTOR: SequentialExecutor
-      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: "mysql+pymysql://root:Pramuka2345%40@mysql:3306/django-app-database"
+      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: -
       AIRFLOW_CORE_LOAD_EXAMPLES: "False"
       _AIRFLOW_WWW_USER_USERNAME: admin
       _AIRFLOW_WWW_USER_PASSWORD: admin
@@ -41,7 +41,7 @@ services:
         condition: service_completed_successfully
     environment:
       AIRFLOW_CORE_EXECUTOR: SequentialExecutor
-      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: "mysql+pymysql://root:Pramuka123%40@mysql:3306/django-app-database"
+      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: -
       AIRFLOW_WEBSERVER_SECRET_KEY: ngabngab
       AIRFLOW_CORE_LOAD_EXAMPLES: "False"
     ports:
@@ -61,7 +61,7 @@ services:
         condition: service_completed_successfully
     environment:
       AIRFLOW_CORE_EXECUTOR: SequentialExecutor
-      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: "mysql+pymysql://root:Pramuka123%40@mysql:3306/django-app-database"
+      AIRFLOW_DATABASE_SQL_ALCHEMY_CONN: -
       AIRFLOW_CORE_LOAD_EXAMPLES: "False"
     volumes:
       - ./dags:/opt/airflow/dags
